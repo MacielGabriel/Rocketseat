@@ -15,16 +15,25 @@ cor4:#202020
   box-sizing: border-box;
 }
 
-body, html{
-  background-image: linear-gradient(60deg, #5e007a, #45007a, #3f004d, #202020);
-  height: 100%;
+:root{
+  --cor01: #5e007a;
+  --cor02: #45007a;
+  --cor03: #3f004d;
+  --cor04: #202020;
+  --cor01link: #5e007a33;
+  --cor02link: #45007a33;
+  --cor03link: #3e004d33;
+  --cor04link: #21212133; 
+}
 
+body, html{
+  background-image: linear-gradient(60deg, var(--cor01), var(--cor02), var(--cor03), var(--cor04));
+  height: 100%;
 }
 #container{
-  height: ;
   width: 360px;
   margin: auto;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.150);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.125);
   border-radius: 15px;
 }
 
@@ -40,21 +49,37 @@ body, html{
   padding: 10px;
 }
 
-#JavaScript{
-  padding: 35px;
+#luz{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 30px;
 }
 
 .Links{
-  text-align: center;
+  background-image: linear-gradient(to left, var(--cor01link), var(--cor02link), var(--cor03link), var(--cor04link));
   color: white;
-  background-image: linear-gradient(to left, #5d007a81, #45007a80, 
-  #3f004d86, #2020206e);
-  border: 1px solid rgba(0, 0, 0, 0.300);
-  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.150);
+  text-align: center;
   margin: 15px;
   padding: 15px;
+  border: 1px solid #0000004d;
+  box-shadow: 2px 3px 6px #00000026;
   border-radius: 10px;
 }
-#container>a>.links:hover{
-  transform:translate(-15px, -10px);
+.Links:hover{
+  transform:translate(-2px, -2px);
+}
+
+#icons{
+
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+footer{
+  color: white;
+  font-size: 1.1em;
+  text-align: right;
+  padding: 25px;
 }
