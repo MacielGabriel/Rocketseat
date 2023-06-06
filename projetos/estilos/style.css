@@ -9,7 +9,7 @@ cor4:#202020
 */
 
 *{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -28,27 +28,28 @@ cor4:#202020
 
 body, html{
   background-image: linear-gradient(60deg, var(--cor01), var(--cor02), var(--cor03), var(--cor04));
-  height: 100%;
+  height: 100vw;
 }
 #container{
   width: 360px;
   margin: auto;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.125);
-  border-radius: 15px;
+  margin-top: 10px;
 }
 
 #perfil img{
   display: block;
   margin: auto;
+  padding-top: 10px;
 }
+
 #perfil p{
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: bolder;
+  font-weight: bold;
   color: white;
   text-align: center;
   padding: 10px;
 }
 
+/*Mudar depois*/
 #luz{
   display: block;
   color: white;
@@ -56,28 +57,46 @@ body, html{
   padding: 30px;
 }
 
-.Links{
-  background-image: linear-gradient(to left, var(--cor01link), var(--cor02link), var(--cor03link), var(--cor04link));
+ul{
+  list-style-type: none;
+}
+
+ul> li> a{
+  display: block;
+  text-decoration: none;
   color: white;
   text-align: center;
-  margin: 15px;
+  margin: 5px 0px;
   padding: 15px;
-  border: 1px solid #0000004d;
-  box-shadow: 2px 3px 6px #00000026;
   border-radius: 10px;
-}
-.Links:hover{
-  transform:translate(-2px, -2px);
+  border: 1px solid rgba(0, 0, 0, 0.150);
 }
 
+li>a:hover{
+  transform:translate(-1px, -1px);
+  box-shadow: 2px 3px 6px #00000026;
+  border: 1px solid rgba(0, 0, 0, 0.300);
+}
 #icons{
-
+  display: flex;
   color: white;
-  padding: 30px;
-  text-align: center;
+  font-size: 1.5em;
+  margin: auto;
+  padding: 25px;
+  gap: 25px;
+  justify-content: center;
 }
+/*
+.icons2:hover{
+  border-radius: 50%;
+  box-shadow: 2px 3px 6px #00000026;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+*/
 
-footer{
+footer {
   color: white;
   font-size: 1.1em;
   text-align: right;
