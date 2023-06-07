@@ -1,35 +1,14 @@
 @charset "UTF-8";
 
-/* 
-cor1:#5e007a
-cor2:#45007a
-cor3:#3f004d
-cor4:#202020
-
-*/
-
 *{
   font-family: 'Times New Roman', Times, serif;
   margin: 0px;
-  padding: 0px;
+   padding: 0px;
   box-sizing: border-box;
 }
 
-:root{
-  --cor01: #5e007a;
-  --cor02: #45007a;
-  --cor03: #3f004d;
-  --cor04: #202020;
-  --cor01link: #5e007a33;
-  --cor02link: #45007a33;
-  --cor03link: #3e004d33;
-  --cor04link: #21212133; 
-}
-
 body, html{
-  background: url(../fotos/B.jpg) no-repeat top center/ cover;
-  /*background-size: cover;
-  background-position: top center;*/
+  background: url(../fotos/fundo.jpg) no-repeat top center/ cover;
   height: 100vw;
 }
 #container{
